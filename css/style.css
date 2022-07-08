@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 .container,
 .container-fluid,
 .container-xxl,
@@ -1579,34 +1607,6 @@ progress {
   --bs-body-bg: #fff;
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
 * {
   box-sizing: border-box;
 }
@@ -1620,7 +1620,7 @@ body {
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1920px;
+  max-width: 1720px;
 }
 
 .about {
@@ -1695,6 +1695,7 @@ body {
   margin-right: 0;
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: normal;
 }
 
 .language a:nth-child(3) {
@@ -1819,10 +1820,13 @@ li:first-child {
   background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 li {
   display: inline-block;
+  flex-shrink: 0;
+  padding-left: 30px;
 }
 li a:hover {
   color: #F0145A;
@@ -1834,6 +1838,8 @@ ul {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }
 
 .listing {
@@ -1846,6 +1852,9 @@ ul {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  border-top: 4px solid rgba(255, 255, 255, 0.3);
 }
 
 .description {
@@ -1853,6 +1862,7 @@ ul {
   font-size: 19px;
   line-height: 30px;
   color: #ffffff;
+  margin: 0;
 }
 
 .servicing a {
@@ -1872,6 +1882,7 @@ ul {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 30px;
   margin-top: 10px;
 }
@@ -1902,6 +1913,7 @@ ul {
   line-height: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #24A3FF;
 }
 .team h2 {
@@ -1911,6 +1923,7 @@ ul {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 30px;
 }
 .team p {
@@ -1927,6 +1940,192 @@ ul {
   margin-bottom: 0;
 }
 
+.icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 120px;
+}
+
+.hillel {
+  background: #1C4280;
+}
+
+.wannabiz {
+  background: #143646;
+}
+
+.look {
+  background: #9E4DC3;
+}
+
+.orangear {
+  background: #FD9339;
+}
+
+.adtelligent {
+  background: #E2E2E4;
+}
+
+.clickky {
+  background: #C71C36;
+}
+
+.leasing {
+  background: #DCF3F9;
+}
+
+.ingratek {
+  background: #EAEAEA;
+}
+
+.city {
+  background: #282240;
+}
+
+.artprint {
+  background: #1D4568;
+}
+
+.ultimatecard {
+  background: #000000;
+}
+
+.tapgerine {
+  background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+}
+
+.icons a:nth-child(n+7) {
+  display: none;
+}
+
+.publications {
+  padding-top: 30px;
+  background: #F5F5FA;
+}
+.publications a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.publications h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+.card h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+  margin-bottom: 15px;
+}
+.card p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  margin-bottom: 15px;
+}
+.card img {
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+}
+.card .Paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  margin: 0;
+  border-top: 4px solid #E6E6F0;
+  padding-top: 15px;
+}
+
+.frames {
+  border-bottom: 2px solid #E6E6F0;
+}
+
+.frame {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #F5F5FA;
+}
+
+.addres {
+  text-align: center;
+}
+.addres p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+  margin-bottom: 10px;
+}
+.addres a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #24A3FF;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.contact a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #46466E;
+  text-decoration: none;
+}
+.contact a:last-child {
+  color: #24A3FF;
+}
+
+.company {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #B3B3BA;
+}
+.company p {
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
   .wrapper {
     padding-left: 60px;
@@ -1938,8 +2137,11 @@ ul {
   .logo_mobile {
     display: none;
   }
+  .icons a:nth-child(n+7) {
+    display: flex;
+  }
   .about {
-    display: block;
+    display: flex;
     padding-top: 50px;
     margin-bottom: 30px;
   }
@@ -1952,9 +2154,6 @@ ul {
     text-decoration: none;
     color: #ffffff;
   }
-  .about a:first-child {
-    margin-right: 14px;
-  }
   .about a:nth-child(3) {
     margin-left: 7px;
     margin-right: 6px;
@@ -1962,33 +2161,32 @@ ul {
     border-radius: 8px;
     background: #F0145A;
   }
-  .about a:nth-child(4) {
+  .location a {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
     color: #B3B3BA;
+    margin-right: 6px;
   }
-  .about a:nth-child(5) {
+  .location a::before {
+    content: url(../images/Dot.png);
+    margin-right: 6px;
+  }
+  .phone a {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
   }
-  .about a:last-child {
-    margin-left: 6px;
-  }
-  .about a:nth-child(4)::after {
+  .phone a::after {
     content: url(../images/Dot.png);
     margin-left: 6px;
-  }
-  .about a:nth-child(4)::before {
-    content: url(../images/Dot.png);
     margin-right: 6px;
   }
-  .about a:nth-child(5)::after {
+  .phone a::before {
     content: url(../images/Dot.png);
-    margin-left: 6px;
+    margin-right: 6px;
   }
   .about_us {
     display: inline-block;
@@ -2015,6 +2213,14 @@ ul {
     padding-top: 274px;
     padding-bottom: 417px;
     margin: 0;
+  }
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .icons a {
+    width: 256px;
   }
 }
 @media (min-width: 1024px) {
