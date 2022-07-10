@@ -1635,7 +1635,7 @@ body {
   display: none;
 }
 
-.header_section {
+.navi {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
   padding-bottom: 60px;
@@ -1768,7 +1768,6 @@ body {
 }
 .photo img {
   width: 100%;
-  height: 500px;
   object-fit: cover;
 }
 
@@ -1780,7 +1779,7 @@ body {
   display: flex;
   gap: 15px;
   justify-content: center;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .ellipse {
@@ -1804,7 +1803,8 @@ body {
   color: #323264;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 li a {
@@ -1826,7 +1826,6 @@ li:first-child {
 li {
   display: inline-block;
   flex-shrink: 0;
-  padding-left: 30px;
 }
 li a:hover {
   color: #F0145A;
@@ -1845,6 +1844,10 @@ ul {
 .listing {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.list {
+  padding-left: 30px;
 }
 
 .idea {
@@ -1874,6 +1877,16 @@ ul {
   text-decoration: none;
   color: #24A3FF;
 }
+.servicing a::after {
+  content: url(../images/Vector.svg);
+  margin-left: 5px;
+}
+.servicing a:hover {
+  color: #F0145A;
+}
+.servicing a:hover::after {
+  content: url(../images/Vector2.svg);
+}
 
 .servicing h2 {
   font-weight: 700;
@@ -1894,17 +1907,24 @@ ul {
   color: #24A3FF;
   margin-bottom: 15px;
 }
-
 .services p {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #ffffff;
+}
+.services img {
   margin-bottom: 30px;
 }
 
-.services img {
-  margin-bottom: 30px;
+.box {
+  padding-bottom: 30px;
+}
+.box:last-child {
+  padding-bottom: 0;
+}
+.box p {
+  margin-bottom: 0;
 }
 
 .team a {
@@ -1915,6 +1935,10 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   color: #24A3FF;
+}
+.team a::after {
+  content: url(../images/Vector.svg);
+  margin-left: 5px;
 }
 .team h2 {
   font-weight: 700;
@@ -2005,13 +2029,16 @@ ul {
   background: #F5F5FA;
 }
 .publications a {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
+}
+.publications a::after {
+  content: url(../images/Vector.svg);
+  margin-left: 5px;
 }
 .publications h2 {
   font-weight: 700;
@@ -2068,9 +2095,6 @@ ul {
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
   background: #F5F5FA;
@@ -2214,6 +2238,18 @@ ul {
     padding-bottom: 417px;
     margin: 0;
   }
+  .list {
+    padding-left: 60px;
+  }
+  li a {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .idea {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+  }
   .icons {
     display: flex;
     flex-wrap: wrap;
@@ -2222,11 +2258,105 @@ ul {
   .icons a {
     width: 256px;
   }
+  .servicing h2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+  }
+  .services p {
+    margin: 0;
+  }
+  .box {
+    width: 45%;
+    gap: 60px;
+    padding-bottom: 0;
+  }
+  .team h2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .publications h2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .card:last-child {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .card:first-child {
+    width: 47.5%;
+  }
+  .card:nth-child(2) {
+    width: 47.5%;
+  }
+  .frames {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .frame {
+    margin-bottom: 0;
+  }
+  .addres {
+    display: flex;
+  }
+  .addres a {
+    top: 5px;
+    position: relative;
+  }
+  .addres p {
+    margin-bottom: 20px;
+  }
+  .addres p::after {
+    content: url(../images/Dot2.svg);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .contact {
+    display: inline-block;
+    padding: 0;
+  }
+  .contact a:nth-child(2)::after {
+    content: url(../images/Dot2.svg);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contact a:nth-child(2)::before {
+    content: url(../images/Dot2.svg);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .addres {
+    display: flex;
+  }
+  .contact {
+    display: inline-block;
+    order: 2;
+    width: 100%;
+    text-align: start;
+  }
+  .company {
+    display: flex;
+  }
+  .turn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 @media (min-width: 1024px) {
   .wrapper {
     padding-left: 60px;
     padding-right: 60px;
+  }
+  .header {
+    background-size: contain;
   }
   .about a:nth-child(4) {
     color: #ffffff;
@@ -2240,6 +2370,7 @@ ul {
   .logo {
     padding-top: 50px;
     margin-bottom: 0;
+    min-width: 40%;
   }
   .about_us {
     position: relative;
@@ -2248,11 +2379,71 @@ ul {
   .about {
     margin-bottom: 0;
   }
+  .legal {
+    padding-top: 250px;
+    padding-bottom: 289px;
+  }
   .photo {
     display: flex;
   }
+  .photo img {
+    width: 400px;
+  }
+  .box {
+    width: 29%;
+    gap: 60px;
+  }
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .listing {
+    display: flex;
+  }
+  .listing h2 {
+    padding-top: 0;
+  }
+  ul {
+    display: inline-block;
+    padding-bottom: 0;
+    text-align: end;
+  }
+  ul li {
+    display: block;
+    margin-bottom: 30px;
+  }
+  ul li:last-child {
+    margin-bottom: 0;
+  }
+  .list {
+    border-right: 4px solid rgba(255, 255, 255, 0.3);
+    padding-right: 60px;
+    display: inline-block;
+    min-width: 50%;
+    text-align: end;
+  }
+  .columm {
+    text-align: start;
+  }
+  .idea {
+    border: none;
+    text-align: start;
+  }
+  .frames {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+  .card:nth-child(n) {
+    width: 31%;
+  }
+  .card:nth-child(n):last-child {
+    margin-bottom: 0;
+  }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .wrapper {
     padding-left: 60px;
     padding-right: 60px;
@@ -2268,5 +2459,38 @@ ul {
   }
   .logo {
     min-width: 50%;
+  }
+  .photo img {
+    width: 400px;
+  }
+  .icons a {
+    width: 360px;
+  }
+  .legal {
+    padding-top: 266px;
+    padding-bottom: 305px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .legal {
+    padding-top: 367px;
+    padding-bottom: 405px;
+  }
+  .icons a {
+    width: 430px;
+  }
+  .icons {
+    width: 1720px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .boxes {
+    padding-bottom: 60px;
   }
 }
